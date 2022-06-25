@@ -4,14 +4,14 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-        m <- NULL
+        sol <- NULL
         set <- function(y) {
                 x <<- y
-                m <<- NULL
+                sol <<- NULL
         }
         get <- function() x
-        setmean <- function(solve) m <<- solve
-        getmean <- function() m
+        setsolve <- function(solve) sol <<- solve
+        getsolve <- function() sol
         list(set = set, get = get,
              setsolve = setsolve,
              get = getsolve)
